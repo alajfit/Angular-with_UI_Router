@@ -1,0 +1,1 @@
+console.log("'Allo 'Allo!"),angular.module("app",["ui.router"]).config(["$urlRouterProvider","$stateProvider",function(a,b){a.otherwise("/"),b.state("home",{url:"/",templateUrl:"views/body.html"}).state("about",{url:"/about",templateUrl:"views/about.html"})}]);

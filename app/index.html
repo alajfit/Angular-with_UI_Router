@@ -25,14 +25,25 @@
     <![endif]-->
 
 
-    <div class="container">
-      
 
-      
 
-      
 
+
+
+
+    <div class="container" ng-app="app">
+      <header ng-include="'views/header.html'"></header>
+      <div ui-view></div>
+      <footer ng-include="'views/footer.html'"></footer>
     </div>
+
+
+
+
+
+
+
+
 
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -62,6 +73,9 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
